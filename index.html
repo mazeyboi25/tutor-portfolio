@@ -1,1 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f1e7" />
+  <meta name="description" content="A warm, modern teacher portfolio and enrollment page." />
+  <title>Teacher Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Go to top">
+      <span class="brand-seal" aria-hidden="true">✦</span>
+      <span id="brandName">Ms. Rivera</span>
+    </a>
 
+    <nav class="nav" id="nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#classroom">Learning</a>
+      <a href="#enroll">Enrollment</a>
+      <button class="nav-cta" type="button" data-open-enroll>Enroll now</button>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="heroTitle">
+      <img class="hero-image" src="assets/hero-books.png" alt="Books, notebooks, pencils and an apple on a bright classroom table" />
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-panel reveal">
+        <p class="eyebrow"><span>✦</span> A CLASSROOM FOR CURIOUS MINDS</p>
+        <h1 id="heroTitle">Learn deeply.<br><em>Grow boldly.</em></h1>
+        <p id="heroIntro" class="hero-intro">A welcoming classroom for big questions, creative thinking, and the confidence to keep trying.</p>
+        <div class="hero-actions">
+          <button class="primary-button" type="button" data-open-enroll>
+            Enroll now <span>↗</span>
+          </button>
+          <a class="soft-link" href="#about">Meet your teacher <span>↓</span></a>
+        </div>
+      </div>
+
+      <div class="hero-tag reveal" aria-hidden="true">
+        <span>TEACH</span><i>•</i><span>TRY</span><i>•</i><span>REFLECT</span><i>•</i><span>GROW</span>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="section-kicker reveal"><span>01</span> ABOUT THE TEACHER</div>
+      <div class="about-grid">
+        <div class="about-heading reveal">
+          <p class="hand-note">hello there ↘</p>
+          <h2>A teacher who makes room for <em>questions.</em></h2>
+        </div>
+        <div class="about-copy reveal">
+          <p id="aboutText">I keep lessons clear, practical, and human. We learn by asking, making, testing, discussing, and trying again—not by pretending every answer appears on the first attempt.</p>
+          <div class="mini-stats">
+            <div><strong id="yearsTeaching">8+</strong><span>years teaching</span></div>
+            <div><strong id="studentCount">1,200+</strong><span>learners guided</span></div>
+            <div><strong id="sinceYear">2018</strong><span>teaching since</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="classroom section-shell" id="classroom">
+      <div class="section-kicker reveal"><span>02</span> WHAT WE LEARN</div>
+      <div class="classroom-heading reveal">
+        <h2>Learning that feels practical,<br><em>creative, and alive.</em></h2>
+        <p>Three focused learning lanes designed to help students understand ideas, use them confidently, and keep improving.</p>
+      </div>
+
+      <div class="subject-grid">
+        <article class="subject-card reveal">
+          <div class="subject-top"><span>01</span><span class="subject-symbol">◌</span></div>
+          <h3 id="subjectOne">General Science</h3>
+          <p id="subjectOneDesc">Notice patterns. Test ideas. Explain what you discover.</p>
+        </article>
+        <article class="subject-card reveal">
+          <div class="subject-top"><span>02</span><span class="subject-symbol">⌁</span></div>
+          <h3 id="subjectTwo">Research</h3>
+          <p id="subjectTwoDesc">Ask better questions and build answers you can defend.</p>
+        </article>
+        <article class="subject-card reveal">
+          <div class="subject-top"><span>03</span><span class="subject-symbol">✦</span></div>
+          <h3 id="subjectThree">Study Skills</h3>
+          <p id="subjectThreeDesc">Learn how to plan, practice, remember, and improve.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="enroll-wrap section-shell" id="enroll">
+      <div class="section-kicker reveal"><span>03</span> ENROLLMENT</div>
+      <div class="payment-wall reveal">
+        <div class="payment-copy">
+          <p class="payment-label">READY WHEN YOU ARE</p>
+          <h2>Join the class.<br><em>Start learning.</em></h2>
+          <p id="enrollText">Reserve your place and get access to guided lessons, learning materials, and teacher support.</p>
+          <div class="included-list" aria-label="Enrollment includes">
+            <span>✦ Class enrollment</span>
+            <span>✦ Lesson materials</span>
+            <span>✦ Teacher guidance</span>
+          </div>
+        </div>
+
+        <aside class="price-card" aria-label="Enrollment price">
+          <p>ONE-TIME ENROLLMENT</p>
+          <div class="price"><span>$</span><strong id="enrollPrice">49</strong><small>USD</small></div>
+          <p class="price-note" id="priceNote">One payment. Your seat is reserved after checkout.</p>
+          <button class="pay-button" type="button" data-open-enroll>
+            Enroll &amp; pay now <span>↗</span>
+          </button>
+          <div class="secure-note"><span>◉</span> Secure checkout</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong id="footerName">Alexandra Rivera</strong>
+      <span id="footerRole">Science & Research Teacher</span>
+    </div>
+    <p>Made for students who ask “why?” <span>✦</span> <span id="year"></span></p>
+  </footer>
+
+  <div class="enroll-modal" id="enrollModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-enroll></div>
+    <section class="enroll-panel" role="dialog" aria-modal="true" aria-labelledby="enrollTitle">
+      <button class="modal-close" type="button" data-close-enroll aria-label="Close">×</button>
+      <p class="modal-eyebrow">ENROLL &amp; PAY</p>
+      <h2 id="enrollTitle">Reserve your place.</h2>
+
+      <div class="modal-order">
+        <div><span>Enrollment</span><strong id="modalPrice">$49 USD</strong></div>
+        <p>Complete your details, then continue to the payment link.</p>
+      </div>
+
+      <form id="enrollForm">
+        <label>
+          Your name
+          <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+        </label>
+        <label>
+          Note <span>optional</span>
+          <textarea name="note" rows="3" placeholder="Anything the teacher should know?"></textarea>
+        </label>
+        <button class="form-submit" type="submit">Continue to payment <span>↗</span></button>
+        <p class="form-help" id="formHelp">Add your Stripe, PayPal, or other checkout URL in <code>content.js</code>.</p>
+      </form>
+    </section>
+  </div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
